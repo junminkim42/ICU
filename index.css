@@ -422,7 +422,7 @@ body{
 /* ------------1번째 컨텐츠----------- */
 #section #tour_reserv{
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     /* background-color: #399cff; */
     position: relative;
     overflow: hidden;
@@ -577,7 +577,7 @@ body{
 /* ------------2번째 컨텐츠------------ */
 #section #travel_news{
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     /* background-color: red; */
 }
 #section #travel_news .t_title{
@@ -1022,7 +1022,7 @@ body{
 }
 #footer .total{
     width:90%;
-    height:350px;
+    /* height:350px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -1031,7 +1031,7 @@ body{
 }
 #footer .l_cont{
     width:450px;
-    height:270px;
+    /* height:270px; */
     margin-top: 40px;
 }
 #footer .total .l_cont .business{
@@ -1059,7 +1059,7 @@ body{
     margin-right: 10px;
 }
 #footer .total .l_cont .tele{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 #footer .total .l_cont .tele .phone{
     width:20px;
@@ -1073,13 +1073,15 @@ body{
 #footer .total .l_cont p{
     margin-bottom: 20px;
 }
-#footer .total .l_cont .logo2{
+#footer .total .r_cont .logo2{
     width:44px;
     height:44px;
     background-image: url(images/logo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 50px;
+    /* margin-top: -80px;
+    margin-left: 40px; */
+    transform: translate(50px, -60px);
 }
 #footer .c_cont{
     width:280px;
@@ -1400,6 +1402,7 @@ body{
 
 /* -----------태블릿---------------- */
 @media (min-width:768px) and (max-width:1023px){
+    #header{width:100%;}
     #header .icu .logo{
         margin-left: 0;
         cursor: pointer;
@@ -1754,7 +1757,14 @@ body{
         #header{
             width:100%;
         }
+        #header .icu{
+            width:80%;
+            margin: 0 auto;
+            /* border:1px solid red; */
+        }
         #header .icu .logo{
+            width:30px;
+            height:30px;
             margin-left: 0;
             cursor: pointer;
         }
@@ -1769,8 +1779,8 @@ body{
         #header .icu .hide{
             display: block;
             cursor: pointer;
-            transition: all 0.3s
-            /* margin-right: 50px; */
+            transition: all 0.3s;
+            /* margin-right: 250px; */
         }
         #header .icu .hide:hover{
             background-color: #fff;
@@ -1782,6 +1792,7 @@ body{
         #section #main{
             width:100%;
             height:100vh;
+            /* background-color: salmon; */
         }
         #section #main .carousel .panel .m_pic3{
             background-position: 45%;
@@ -1790,16 +1801,16 @@ body{
             
         } */
         #section #main .carousel>ul>li .m_text h1{
-            width:80vw;
-            font-size: 40px;
-            border:1px solid red;
+            /* width:75vw; */
+            font-size: 35px;
+            /* border:1px solid red; */
             text-align: center;
         }
         #section #main .carousel>ul>li .m_text p{
-            width:80vw;
-            font-size: 30px;
-            line-height: 6vh;
-            padding-left: 20px;
+            /* width:75vw; */
+            font-size: 24px;
+            line-height: 4vh;
+            /* padding-left: 20px; */
             text-align: center;
         }
         #section #main .carousel>ul>li .btn1{
@@ -1808,9 +1819,10 @@ body{
         #section #main .carousel>ul>li .m_text{
             width:70vw;
             height:40vh;
+            margin: 0 auto;
             /* border:1px solid red; */
-            text-align: left;
-            left:44%; top:30%
+            /* text-align: left; */
+            /* left:44%; top:30% */
         }
         #section #main .navigation_bar{
             display: none;
@@ -1824,19 +1836,19 @@ body{
         /* ------------1번째 컨텐츠------------- */
         #section #tour_reserv{
             width:100%;
-            height:100vh;
+            /* height:100vh; */
             /* background-color: salmon; */
         }
         #section #tour_reserv .t_title h2{
             /* width:600px; */
-            font-size: 36px;
+            font-size: 30px;
             /* border:1px solid red; */
         }
         #section #tour_reserv .t_title h2:after{
             display: none;
         }
         #section #tour_reserv  .detail{
-            font-size: 24px;
+            font-size: 19px;
             /* border:1px solid red; */
         }
         #section #tour_reserv .carousel2{
@@ -1862,18 +1874,18 @@ body{
         /* -------------2번째 컨텐츠--------------- */
         #section #travel_news{
             width:100%;
-            height:100vh;
+            /* height:100vh; */
         }
         #section #travel_news .t_title h2{
             /* width:600px; */
-            font-size: 36px;
+            font-size: 30px;
             /* border:1px solid red; */
         }
         #section #travel_news .t_title h2:after{
             display: none;
         }
         #section #travel_news  .detail{
-            font-size: 24px;
+            font-size: 19px;
             /* border:1px solid red; */
         }
         #section #travel_news .btn2{
@@ -1892,6 +1904,7 @@ body{
             width:250px;
             height:550px;
             cursor: pointer;
+            /* margin-bottom: 0px; */
         }
         #section #travel_news .article>ul>li{
             width:250px;
@@ -1909,19 +1922,19 @@ body{
 
         #section #about_us{
             width:100%;
-            height:100vh;
+            /* height:100vh; */
             /* position: relative; */
         }
         #section #about_us .t_title h2{
             /* width:600px; */
-            font-size: 36px;
+            font-size: 30px;
             /* border:1px solid red; */
         }
         #section #about_us .t_title h2:after{
             display: none;
         }
         #section #about_us  .detail{
-            font-size: 24px;
+            font-size: 19px;
             margin-bottom: 60px;
             /* border:1px solid red; */
         }
@@ -1988,11 +2001,15 @@ body{
             background-color: #F8F9FA;
         }
         #section #about_us .memory>li{
-            width:99%;
+            width:90%;
             position: absolute;
-            left:1%;
+            left:3.7%;
             /* background-color: salmon; */
         }
+        #section #about_us .memory>li h3{
+            font-size: 18px;
+        }
+        #section #about_us .memory>li p{display: none;}
         #section #about_us .memory .a_cont1{
             top:0;
         }
@@ -2007,6 +2024,7 @@ body{
         }
         #section #about_us .memory .a_cont5{
             top:80%;
+            display: none;
         }
         #section #about_us .memory .a_cont5 .circle5 p{
             padding-top: 12px;
@@ -2018,7 +2036,7 @@ body{
         /* ----------4번째----------- */
         #section #festival{
             width:100%;
-            height:100vh;
+            height:720px;
             margin:0;
         }
         #section #festival .backg{
@@ -2028,14 +2046,14 @@ body{
         }
         #section #festival .t_title h2{
             /* width:600px; */
-            font-size: 36px;
+            font-size: 30px;
             /* border:1px solid red; */
         }
         #section #festival .t_title h2:after{
             display: none;
         }
         #section #festival  .detail{
-            font-size: 24px;
+            font-size: 19px;
             /* border:1px solid red; */
         }
         /* #section #festival .f_cont{
@@ -2046,11 +2064,11 @@ body{
             width:240px;
             height:240px;
         } */
-        /* #section #festival .f_cont .container1>li:nth-child(2), */
+        #section #festival .f_cont .container1>li:nth-child(2),
         #section #festival .f_cont .container1>li:nth-child(3){
             display: none;
         }
-        /* #section #festival .f_cont .container2>li:nth-child(2), */
+        #section #festival .f_cont .container2>li:nth-child(2),
         #section #festival .f_cont .container2>li:nth-child(3){
             display: none;
         }
@@ -2060,24 +2078,24 @@ body{
             
         } */
         #section #festival .f_cont{
-            width:400px;
+            width:240px;
             margin: 0 auto;
             /* border:1px solid red; */
         }
         #section #festival .f_cont>ul>li{
-            width:180px;
-            height:180px;
+            width:240px;
+            height:240px;
             /* margin-right: 20px; */
             /* border-radius: 20px; */
             position: relative;
         }
         #section #festival .f_cont>ul>li .e_cont img{
-            width:180px;
-            height:180px;
+            width:240px;
+            height:240px;
             border-radius: 20px;
             padding-top: 0;
         }
-        #section #festival .f_cont>ul>li img:hover{
+        #section #festival .f_cont>ul>li:hover img{
             filter: brightness(0.5);
         }
         #section #festival .f_cont>ul>li:hover .f_text{
@@ -2110,17 +2128,18 @@ body{
 
         #footer{
             width:100%;
-            height:350px;
+            height:300px;
         }
         #footer .total{
             width:90%;
             /* background-color: salmon; */
         }
         #footer .total .l_cont{
-            width:70%;
-            font-size: 12px;
+            /* width:70%; */
+            font-size: 14px;
             /* border: 1px solid red; */
         }
+        /* #footer .total .l_cont>div>div{float:none; clear:both;} */
         #footer .total .c_cont .f_icons{
             display: none;
         }
