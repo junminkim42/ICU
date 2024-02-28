@@ -95,7 +95,7 @@ body{
     display:none;
     color:#fff;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 #header .hide span{
     font-size: 36px;
@@ -1758,7 +1758,7 @@ body{
             width:100%;
         }
         #header .icu{
-            width:80%;
+            width:84%;
             margin: 0 auto;
             /* border:1px solid red; */
         }
@@ -1791,7 +1791,7 @@ body{
 
         #section #main{
             width:100%;
-            height:100vh;
+            /* height:100vh; */
             /* background-color: salmon; */
         }
         #section #main .carousel .panel .m_pic3{
@@ -1818,11 +1818,9 @@ body{
         }
         #section #main .carousel>ul>li .m_text{
             width:70vw;
-            height:40vh;
-            margin: 0 auto;
+            /* height:40vh; */
+            margin: 80px auto;
             /* border:1px solid red; */
-            /* text-align: left; */
-            /* left:44%; top:30% */
         }
         #section #main .navigation_bar{
             display: none;
@@ -1857,7 +1855,7 @@ body{
             overflow:hidden ;
         }
         #section #tour_reserv .carousel2 .tour{
-            transform: translateX(-270px);
+            transform: translateX(-280px);
         }
         #section #tour_reserv .carousel2 .tour>li{
             width:420px;
@@ -1889,15 +1887,15 @@ body{
             /* border:1px solid red; */
         }
         #section #travel_news .btn2{
-            width:360px;
+            width:320px;
             /* border:1px solid red; */
         }
         #section #travel_news .btn2>li{
-            width:108px;
-            height:40px;
+            width:92px;
+            height:36px;
             /* margin-right: 20px; */
-            line-height: 40px;
-            font-size: 16px;
+            line-height: 36px;
+            font-size: 14.4px;
             cursor: pointer;
         }
         #section #travel_news .article{
@@ -2006,8 +2004,14 @@ body{
             left:3.7%;
             /* background-color: salmon; */
         }
+        #section #about_us .memory>li:nth-child(1) h3{top:0;}
         #section #about_us .memory>li h3{
+            width:50%;
             font-size: 18px;
+            position: absolute;
+            left:50%; top:18px;
+            transform: translateX(-50%);
+            /* border:1px solid white; */
         }
         #section #about_us .memory>li p{display: none;}
         #section #about_us .memory .a_cont1{
@@ -2129,6 +2133,7 @@ body{
         #footer{
             width:100%;
             height:300px;
+            position: relative;
         }
         #footer .total{
             width:90%;
@@ -2137,13 +2142,19 @@ body{
         #footer .total .l_cont{
             /* width:70%; */
             font-size: 14px;
+            transform: translateY(-20px);
+            /* margin-bottom: 10px; */
             /* border: 1px solid red; */
+        }
+        #footer .total .r_cont .logo2{
+            position: absolute;
+            right:15%; top:30%;
         }
         /* #footer .total .l_cont>div>div{float:none; clear:both;} */
         #footer .total .c_cont .f_icons{
             display: none;
         }
-        #footer .total .r_cont{
+        #footer .total .r_cont p{
             display: none;
         }
     }
