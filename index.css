@@ -707,13 +707,13 @@ body{
     /* background-color: salmon; */
     box-sizing: border-box;
 }
-#section #travel_news .article>ul>li img{
+#section #travel_news .article>ul>li .mouse img{
     width:320px;
     height:280px;
     transition: all 0.5s;
-    overflow: hidden;
+    
 }
-#section #travel_news .article>ul>li img:hover{
+#section #travel_news .article>ul>li .mouse img:hover{
     transform: scale(1.1);
     overflow: hidden;
 }
@@ -1791,11 +1791,14 @@ body{
 
         #section #main{
             width:100%;
-            /* height:100vh; */
+            height:750px;
             /* background-color: salmon; */
         }
+        #section #main .carousel>ul>li .m_pic1{
+            background-position:75%;
+        }
         #section #main .carousel .panel .m_pic3{
-            background-position: 45%;
+            background-position: 54%;
         }
         /* #section #main .carousel>ul>li .m_text{
             
@@ -1834,7 +1837,7 @@ body{
         /* ------------1번째 컨텐츠------------- */
         #section #tour_reserv{
             width:100%;
-            /* height:100vh; */
+            height:720px;
             /* background-color: salmon; */
         }
         #section #tour_reserv .t_title h2{
@@ -1855,7 +1858,7 @@ body{
             overflow:hidden ;
         }
         #section #tour_reserv .carousel2 .tour{
-            transform: translateX(-280px);
+            transform: translateX(-286px);
         }
         #section #tour_reserv .carousel2 .tour>li{
             width:420px;
@@ -1863,6 +1866,20 @@ body{
             border:5px solid #c7c6c694;
             box-sizing: border-box;
             transition: all 0.3s;
+        }
+        #section #tour_reserv .carousel2 .l_btn{
+            width: 50px;
+            height:50px;
+            line-height: 50px;
+            font-size: 20px;
+            top:54%; left:10%;
+        }
+        #section #tour_reserv .carousel2 .r_btn{
+            width: 50px;
+            height:50px;
+            line-height: 50px;
+            font-size: 20px;
+            top:54%; right:16%;
         }
         #section #tour_reserv .carousel2 .tour>li:hover span{
             display: block;
@@ -1872,7 +1889,7 @@ body{
         /* -------------2번째 컨텐츠--------------- */
         #section #travel_news{
             width:100%;
-            /* height:100vh; */
+            height:720px;
         }
         #section #travel_news .t_title h2{
             /* width:600px; */
@@ -1888,6 +1905,7 @@ body{
         }
         #section #travel_news .btn2{
             width:320px;
+            margin-bottom: 20px;
             /* border:1px solid red; */
         }
         #section #travel_news .btn2>li{
@@ -1899,18 +1917,29 @@ body{
             cursor: pointer;
         }
         #section #travel_news .article{
-            width:250px;
+            width:240px;
             height:550px;
             cursor: pointer;
-            /* margin-bottom: 0px; */
+            
         }
         #section #travel_news .article>ul>li{
-            width:250px;
-            height:250px;
+            width:240px;
+            height:220px;
+            margin-bottom: 30px;
             border:3px solid #dbd9d9a4;
+        }
+        #section #travel_news .article .contents li:nth-child(2) .mouse img{
+            transform: translateY(-20px);
+        }
+        #section #travel_news .article .content3 li:nth-child(1) .mouse img{
+            transform: translateY(-50px);
         }
         #section #travel_news .article>ul>li .mouse img{
             width:250px;
+            background-position: center;
+        }
+        #section #travel_news .article>ul>li:hover{
+            transform: scale(1.5);
         }
         #section #travel_news .article>ul>li .read{
             display: none;
@@ -1920,7 +1949,7 @@ body{
 
         #section #about_us{
             width:100%;
-            /* height:100vh; */
+            height:720px;
             /* position: relative; */
         }
         #section #about_us .t_title h2{
@@ -1947,7 +1976,7 @@ body{
             position: absolute;
             left:58%;
             transform: translateX(-50%);
-            margin-top: 10px;
+            margin-top: 13px;
         }
         #section #about_us .memory .a_cont1 .intro{
             float:right;
@@ -2011,23 +2040,23 @@ body{
             position: absolute;
             left:50%; top:18px;
             transform: translateX(-50%);
-            /* border:1px solid white; */
+            /* border:1px solid red; */
         }
         #section #about_us .memory>li p{display: none;}
         #section #about_us .memory .a_cont1{
             top:0;
         }
         #section #about_us .memory .a_cont2{
-            top:20%;
+            top:25%;
         }
         #section #about_us .memory .a_cont3{
-            top:40%;
+            top:50%;
         }
         #section #about_us .memory .a_cont4{
-            top:60%;
+            top:75%;
         }
         #section #about_us .memory .a_cont5{
-            top:80%;
+            top:100%;
             display: none;
         }
         #section #about_us .memory .a_cont5 .circle5 p{
@@ -2132,7 +2161,7 @@ body{
 
         #footer{
             width:100%;
-            height:300px;
+            height:320px;
             position: relative;
         }
         #footer .total{
