@@ -181,4 +181,11 @@ $(window).scroll(function(){
 		$('html, body').animate({ scrollTop: 0 }, 300);
 	});
 
+
+    $(".hide").click(function(){
+        $(".menu_sub").show();
+    })
+    $("#main").click(function(){
+        $(".menu_sub").hide();
+    })
 });
