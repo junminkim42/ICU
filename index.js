@@ -185,7 +185,7 @@ $(window).scroll(function(){
     $(".hide").click(function(){
         $(".menu_sub").show();
     })
-    $("#main").click(function(){
+    $("#section").click(function(){
         $(".menu_sub").hide();
     })
 
