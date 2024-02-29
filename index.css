@@ -115,14 +115,14 @@ body{
     display: none;
 }
 .menu_sub>ul{
-    width:90%;
-    font-size: 14px;
+    width:80%;
+    font-size: 12px;
     font-weight: normal;
     margin: 0 auto;
     letter-spacing: -1;
     display: flex;
     justify-content: space-between;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 
 .menu_sub>ul>li a{
@@ -1823,7 +1823,7 @@ body{
 
         #section #main{
             width:100%;
-            /* height:100vh; */
+            height:720px;
             /* background-color: salmon; */
         }
         #section #main .carousel .panel{
@@ -1872,7 +1872,7 @@ body{
         /* ------------1번째 컨텐츠------------- */
         #section #tour_reserv{
             width:100%;
-            /* height:720px; */
+            height:720px;
             /* background-color: salmon; */
         }
         #section #tour_reserv .t_title h2{
@@ -1924,7 +1924,7 @@ body{
         /* -------------2번째 컨텐츠--------------- */
         #section #travel_news{
             width:100%;
-            /* height:720px; */
+            height:720px;
         }
         #section #travel_news .t_title h2{
             /* width:600px; */
@@ -2009,7 +2009,7 @@ body{
 
         #section #about_us{
             width:100%;
-            /* height:720px; */
+            height:720px;
             /* position: relative; */
         }
         #section #about_us .t_title h2{
