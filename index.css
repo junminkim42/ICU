@@ -123,12 +123,12 @@ body{
     display: flex;
     text-align: center;
     justify-content: space-around;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 .menu_sub>ul>li{
     width:100%;
-    /* margin-right: 10px; */
-    border:1px solid red;
+    margin-right: 10px;
+    /* border:1px solid red; */
 }
 .menu_sub>ul>li:nth-child(1){
     /* margin-left: 10px; */
@@ -1835,7 +1835,7 @@ body{
             height:720px;
             /* background-color: salmon; */
         }
-        #section #main .carousel .panel{
+        /* #section #main .carousel .panel{
             height:720px;
         }
         #section #main .carousel>ul>li .m_pic1{
@@ -1843,7 +1843,7 @@ body{
         }
         #section #main .carousel .panel .m_pic3{
             background-position: 54%;
-        }
+        } */
         /* #section #main .carousel>ul>li .m_text{
             
         } */
