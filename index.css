@@ -113,7 +113,7 @@ body{
 }
 #section #main{
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     position: relative;
     background-color: #F8F9FA;
 }
@@ -740,7 +740,7 @@ body{
 /* ------------3번째 컨텐츠----------------- */
 #section #about_us{
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     /* background-color: rgb(232, 135, 235); */
     background-image: url(images/a_bgr.png);
     background-repeat: no-repeat;
@@ -895,7 +895,7 @@ body{
 /* ----------4번째 컨텐츠---------- */
 #section #festival{
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     position: relative;
     /* background-color:skyblue; */
 }
@@ -1866,7 +1866,7 @@ body{
         #section #tour_reserv .carousel2 .tour>li{
             width:420px;
             height:420px;
-            /* border:5px solid #c7c6c694; */
+            border:5px solid #c7c6c694;
             box-sizing: border-box;
             transition: all 0.3s;
         }
