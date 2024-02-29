@@ -1858,12 +1858,12 @@ body{
             overflow:hidden ;
         }
         #section #tour_reserv .carousel2 .tour{
-            transform: translateX(-286px);
+            transform: translateX(-290px);
         }
         #section #tour_reserv .carousel2 .tour>li{
             width:420px;
             height:420px;
-            border:5px solid #c7c6c694;
+            /* border:5px solid #c7c6c694; */
             box-sizing: border-box;
             transition: all 0.3s;
         }
