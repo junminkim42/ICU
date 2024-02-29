@@ -188,4 +188,9 @@ $(window).scroll(function(){
     $("#main").click(function(){
         $(".menu_sub").hide();
     })
+
+
+    // $(".article>ul>li img").click(function(){
+    //     $("h3").show();
+    // })
 });

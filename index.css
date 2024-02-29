@@ -115,8 +115,8 @@ body{
     display: none;
 }
 .menu_sub>ul{
-    width:95%;
-    font-size: 14.4px;
+    width:90%;
+    font-size: 14px;
     font-weight: normal;
     margin: 0 auto;
     letter-spacing: -1;
@@ -1823,7 +1823,7 @@ body{
 
         #section #main{
             width:100%;
-            height:100vh;
+            /* height:100vh; */
             /* background-color: salmon; */
         }
         #section #main .carousel .panel{
@@ -1872,7 +1872,7 @@ body{
         /* ------------1번째 컨텐츠------------- */
         #section #tour_reserv{
             width:100%;
-            height:720px;
+            /* height:720px; */
             /* background-color: salmon; */
         }
         #section #tour_reserv .t_title h2{
@@ -1924,7 +1924,7 @@ body{
         /* -------------2번째 컨텐츠--------------- */
         #section #travel_news{
             width:100%;
-            height:720px;
+            /* height:720px; */
         }
         #section #travel_news .t_title h2{
             /* width:600px; */
@@ -1955,14 +1955,42 @@ body{
             width:240px;
             height:550px;
             cursor: pointer;
-            
         }
         #section #travel_news .article>ul>li{
             width:240px;
             height:220px;
             margin-bottom: 30px;
-            border:3px solid #dbd9d9a4;
+            /* border:3px solid #dbd9d9a4; */
         }
+        /* #section #travel_news .article>ul>li h3{
+            width:84%;
+            position: absolute;
+            top:50%; left:50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            text-align: center;
+            color: #fff;
+            display: none;
+        } */
+        /* #section #travel_news .article>ul>li img{border:1px solid red;}
+        #section #travel_news .article>ul>li .container:hover{
+            filter: brightness(0.5);
+        }
+        #section #travel_news .article>ul>li>div:hover .h3{
+            display: block;
+            transition: all 0.5s;
+        }
+        #section #travel_news .article>ul>li>div:hover h3{
+            width:100%;
+            position: absolute;
+            top:50%; left:50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            display: none;
+        } */
+        /* #section #travel_news .article>ul>li img:hover h3{
+            display: block;
+        } */
         #section #travel_news .article .contents li:nth-child(2) .mouse img{
             transform: translateY(-20px);
         }
@@ -1973,9 +2001,6 @@ body{
             width:250px;
             background-position: center;
         }
-        #section #travel_news .article>ul>li:hover{
-            transform: scale(1.5);
-        }
         #section #travel_news .article>ul>li .read{
             display: none;
         }
@@ -1984,7 +2009,7 @@ body{
 
         #section #about_us{
             width:100%;
-            height:720px;
+            /* height:720px; */
             /* position: relative; */
         }
         #section #about_us .t_title h2{
