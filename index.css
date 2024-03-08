@@ -130,9 +130,6 @@ body{
     margin-right: 10px;
     /* border:1px solid red; */
 }
-.menu_sub>ul>li:nth-child(1){
-    /* margin-left: 10px; */
-}
 .menu_sub>ul>li a{
     color:#fff;
     white-space: nowrap;
@@ -152,7 +149,7 @@ body{
 }
 #section #main{
     width:100%;
-    /* height:100vh; */
+    height:953px;
     position: relative;
     background-color: #F8F9FA;
 }
@@ -291,7 +288,7 @@ body{
 }
 #section #main .navigation_bar{
     width:90%;
-    height:18vh;
+    height:180px;
     background-color: #ffffffa1;
     position: absolute;
     bottom:0; left:50%;
@@ -461,7 +458,7 @@ body{
 /* ------------1번째 컨텐츠----------- */
 #section #tour_reserv{
     width:100%;
-    /* height:100vh; */
+    height:953px;
     /* background-color: #399cff; */
     position: relative;
     overflow: hidden;
@@ -616,7 +613,7 @@ body{
 /* ------------2번째 컨텐츠------------ */
 #section #travel_news{
     width:100%;
-    height:100vh;
+    height:953px;
     /* background-color: red; */
 }
 #section #travel_news .t_title{
@@ -701,7 +698,7 @@ body{
     border:1px solid #aaaaaa80;
     margin-bottom: 30px;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     overflow:hidden;
     font-family: "Nanum Pen Script";
     font-weight: 400;
@@ -732,12 +729,14 @@ body{
     position: absolute;
     bottom:10%; right:1%;
     text-decoration: underline;
-    cursor: pointer;
+    cursor: pointer; 
 }
 #section #travel_news .article>ul>li .mouse{
     overflow: hidden;
     float:left;
     width: 320px;
+    position: relative;
+    z-index: 100;
 }
 #section #travel_news .article>ul>li .c_text{
     float:left;
@@ -750,12 +749,32 @@ body{
     width:320px;
     height:280px;
     transition: all 0.5s;
-    
 }
-#section #travel_news .article>ul>li .mouse img:hover{
-    transform: scale(1.1);
-    overflow: hidden;
+#section #travel_news .article>ul>li .mouse span{
+    display: block;
+    text-align: center;
+    font-size: 23pt;
+    position: absolute;
+    left:0; bottom:-80px;
+    transition: all 0.5s;
+    line-height: 28px;
+    width: 100%; height: 80px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    background-color: #ffffff9c;
+    /* display: none; */
+    /* opacity: 0.3; */
 }
+
+
+
+#section #travel_news .article .contents>li .mouse span{
+    height:60px;
+    padding-top: 12px;
+}
+
+
+
 #section #travel_news .article>.off{display:block}
 #section #travel_news .contents{display:none;}
 #section #travel_news .content2{display: none;}
@@ -779,7 +798,7 @@ body{
 /* ------------3번째 컨텐츠----------------- */
 #section #about_us{
     width:100%;
-    /* height:100vh; */
+    height:953px;
     /* background-color: rgb(232, 135, 235); */
     background-image: url(images/a_bgr.png);
     background-repeat: no-repeat;
@@ -934,7 +953,7 @@ body{
 /* ----------4번째 컨텐츠---------- */
 #section #festival{
     width:100%;
-    /* height:100vh; */
+    height:953px;
     position: relative;
     /* background-color:skyblue; */
 }
@@ -996,9 +1015,9 @@ body{
 }
 #section #festival .f_cont>ul>li{
     width:260px;
-    height:320px;
+    height:330px;
     background-color: #F8F9FA;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     /* margin-left: 120px; */
     margin-bottom: 30px;
@@ -1018,20 +1037,22 @@ body{
     color:#666;
 }
 #section #festival .f_cont>ul>li .e_cont{
-    /* overflow: hidden; */
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px;
+    transition: all 0.5s;
 }
 #section #festival .f_cont>ul>li .e_cont img{
-    width:250px;
+    width:240px;
     height:210px;
-    border-radius: 20px 20px 0 0;
     margin-bottom: 5px;
     overflow: hidden;
     transition: all 0.5s;
-    padding-top: 5px;
+    padding-top: 10px;
     box-sizing: border-box;
 }
-/* #section #festival .f_cont>ul>li .e_cont img:hover{
+#section #festival .f_cont>ul>li .e_cont:hover{
+    background-color: #fcd858;
+}
+/* #section #festival .f_cont>ul>li .e_cont:hover{
     transform: scale(1.05);
 } */
 #section #festival .f_cont>ul>li .linker{
@@ -1051,6 +1072,8 @@ body{
     height:30px;
     /* margin-right: 10px; */
 }
+
+/* ---------푸터---------- */
 #footer{
     width:100%;
     height:350px;
@@ -1180,6 +1203,11 @@ body{
 #footer .total .r_cont p a{
     color:white;
 }
+#footer .total .r_cont .logo2{
+    position: absolute;
+    right:4%; top:35%;
+    /* border:1px solid red; */
+}
 
 /* -------------애니메이션 효과----------- */
 
@@ -1243,9 +1271,12 @@ body{
     }
 
     /* --------섹션---------- */
-    section #main{
+    #section #main{
         width:100%;
-        height:100vh;
+        height:920px;
+    }
+    #section #main .panel>li{
+        height:920px;
     }
     #section #main .carousel>ul>li .m_text h1{
         font-size: 3.6vw;
@@ -1259,6 +1290,9 @@ body{
     }
     #section #main .carousel>ul>li .btn1{
         font-size: 1.2vw;
+    }
+    #section #main .navigation_bar{
+        height:150px;
     }
     #section #main .navigation_bar .navigation_icons .n_pic1{
         width:70px;
@@ -1292,7 +1326,7 @@ body{
     /* ---------1번째 컨텐츠-------------- */
     #section #tour_reserv{
         width:100%;
-        height:100vh;
+        height:920px;
         /* border:1px solid red; */
     }
     #section #tour_reserv .t_title{
@@ -1314,7 +1348,7 @@ body{
     /* ---------------2번째 컨텐츠-------------- */
     #section #travel_news{
         width:100%;
-        height:100vh;
+        height:920px;
         /* border:1px solid red; */
     }
     #section #travel_news .t_title h2:after{
@@ -1331,9 +1365,48 @@ body{
         line-height: 42px;
     }
     #section #travel_news .article{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        /* width:720px; */
+        /* height:40vh; */
+    }
+    #section #travel_news .article>ul>li{
+        width:100%;
+        height:280px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border:5px solid #c7c6c673;
+        box-sizing: border-box;
+    }
+    #section #travel_news .article>ul>li .mouse{
+        width: 30%;
+        float:left;
+    }
+    #section #travel_news .article>ul>li .mouse img{
+        width: 280px;
+        height: 280px;
+    }
+    #section #travel_news .article>ul>li .c_text{
+        float:left;
+        width: 70%;
+        padding:30px;
+        box-sizing: border-box;
+    }
+    #section #travel_news .article>ul>li h3{
+        /* margin-left: 0; */
+        font-size: 32px;
+    }
+    #section #travel_news .article>ul>li p{
+        font-size:24px;
+        /* line-height: 24px; */
+    }
+    #section #travel_news .article>ul>li .read{
+        display: none;
+    }
+    /* #section #travel_news .article{
         width:800px;
         height:500px;
-        /* border:1px solid red; */
     }
     #section #travel_news .article>ul>li{
         width:100%;
@@ -1343,15 +1416,15 @@ body{
         font-size: 32px;
     }
     #section #travel_news .article>ul>li img{
-        width:220px;
-        height:220px;
+        width:240px;
+        height:240px;
     }
     #section #travel_news .article>ul>li .mouse{
         width: 220px;  
     }
     #section #travel_news .article>ul>li .c_text{
         width: 570px;
-    }
+    } */
 
 
 
@@ -1360,23 +1433,88 @@ body{
     /* -----------3번째 컨텐츠---------- */
     #section #about_us{
         width:100%;
-        height:100vh;
-        /* background-image: none; */
+        height:920px;
         background-color: #F8F9FA;
-        /* position: relative; */
     }
+    #section #about_us{
+        height:800px;
+    } 
     #section #about_us .t_title h2:after{
         display: none;
     }
+    #section #about_us .detail{
+        font-size: 2.4vw;
+    } 
     #section #about_us .memory{
-        /* border:1px solid red; */
+        height:560px;
+        position: relative;
+    }
+    #section #about_us .memory>li{
+        border-bottom: 1px solid #e0e0e0b2;
+    }
+    #section #about_us .memory>li .intro{
+        margin-top: -10px;
+    }
+    #section #about_us .memory>li:hover .intro{
+        display: block;
+    }
+    #section #about_us .memory .a_cont1{
+        top:0%; left:50%;
+        transform: translateX(-50%);
+    }
+    #section #about_us .memory .a_cont2{
+        top:25%; left:50%;
+        transform: translateX(-50%);
+    }
+    #section #about_us .memory .a_cont3{
+        top:50%; left:50%;
+        transform: translateX(-46%);
+    }
+    #section #about_us .memory .a_cont4{
+        top:75%; left:50%;
+        transform: translateX(-50%);
+        border:none;
+    }
+    #section #about_us .memory .a_cont5{
+        display: none;
+    }
+    #section #about_us .memory>li h3{
+        font-size: 2vw;
+        /* display: none; */
+    }
+    #section #about_us .memory>li p{
+        font-size: 1.6vw;
+        /* display: none; */
+    }
+    #section #about_us .memory>li{
+        width:80%;
+        height:100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #section #about_us .memory>li .circle{
+        width:100px;
+        height:100px;
+        transform: translateY(-20px);
+    }
+    #section #about_us .memory>li .circle5{
+        width:80px;
+        height:80px;
+    }
+    #section #about_us{
+        background-image: none;
+        background-color: #F8F9FA;
+    }
+    /* #section #about_us .t_title h2:after{
+        display: none;
+    }
+    #section #about_us .memory{
         width:90%;
         position: relative;
     }
     #section #about_us .memory>li{
         width:25vw;
         height:150px;
-        /* border:1px solid red; */
     }
     #section #about_us .memory .a_cont1{
         position: absolute;
@@ -1408,21 +1546,20 @@ body{
     #section #about_us .memory>li h3{
         font-size: 24px;
         margin-bottom: 0;
-        /* display: none; */
     }
     #section #about_us .memory>li p{
         font-size: 18px;
-    }
+    } */
     
     /* -----------4번째 컨텐츠----------- */
     #section #festival{
         width:100%;
-        height:100vh;
+        height:920px;
         position: relative;
     }
-    #section #festival .t_title{
+    /* #section #festival .t_title{
         margin-top: -30px;
-    }
+    } */
     #section #festival .t_title h2:after{
         display: none;
     }
@@ -1434,8 +1571,13 @@ body{
     }
 
     /* -------------푸터------------- */
-    #footer .total .r_cont{
+    #footer .total .r_cont p{
         display: none;
+    }
+    #footer .total .r_cont .logo2{
+        position: absolute;
+        right:8%; top:35%;
+        /* border:1px solid red; */
     }
 }
 
@@ -1469,7 +1611,10 @@ body{
     /* ------------메인--------------- */
     #section #main{
         width:100%;
-        height:100vh;
+        height:800px;
+    }
+    #section #main .carousel .panel>li{
+        height:800px;
     }
     #section #main .carousel .panel .m_pic3{
         background-position: 45%;
@@ -1491,6 +1636,10 @@ body{
         /* border:1px solid red; */
         text-align: left;
         left:44%; top:30%
+    }
+    #section #main .navigation_bar{
+        bottom:0;
+        height:130px;
     }
     #section #main .navigation_bar .navigation_icons li{
         margin-top: 15px;
@@ -1531,7 +1680,7 @@ body{
     /* ---------------1번째 컨텐츠------------- */
     #section #tour_reserv{
         width:100%;
-        height:100vh;
+        height:800px;
     }
     #section #tour_reserv .t_title h2:after{
         /* width:40px;
@@ -1557,7 +1706,7 @@ body{
     /* -----------2번째 컨텐츠----------- */
     #section #travel_news{
         width:100%;
-        height:100vh;
+        height:800px;
     }
     #section #travel_news .t_title h2:after{
         /* width:40px;
@@ -1582,38 +1731,37 @@ body{
     #section #travel_news .article{
         width: 85%;
         margin: 0 auto;
+        margin-bottom: 0px;
         /* width:720px; */
         /* height:40vh; */
     }
     #section #travel_news .article>ul>li{
         width:100%;
-        height:220px;
+        height:240px;
         margin: 0 auto;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border:5px solid #c7c6c673;
         box-sizing: border-box;
     }
     #section #travel_news .article>ul>li .mouse{
-        width: 26%;
+        width: 30%;
         float:left;
+    }
+    #section #travel_news .article>ul>li .mouse img{
+        width: 240px;
+        height: 240px;
     }
     #section #travel_news .article>ul>li .c_text{
-        /* transform: translateX(-25px); */
-        /* background-color: salmon; */
         float:left;
-        width: 73%;
+        width: 70%;
         padding:15px;
-    }
-    #section #travel_news .article>ul>li img{
-        width:220px;
-        height:220px;
     }
     #section #travel_news .article>ul>li h3{
         /* margin-left: 0; */
-        font-size: 25px;
+        font-size: 32px;
     }
     #section #travel_news .article>ul>li p{
-        font-size: 23px;
+        font-size:24px;
         /* line-height: 24px; */
     }
     #section #travel_news .article>ul>li .read{
@@ -1621,16 +1769,10 @@ body{
     }
     
 
-
-
-
-
-
-
     /* ---------3번째------------- */
     #section #about_us{
         width:100%;
-        height:100vh;
+        height:800px;
         /* background-color: darkolivegreen; */
     } 
     #section #about_us .t_title h2:after{
@@ -1713,11 +1855,14 @@ body{
     /* -----------4번째------------- */
     #section #festival{
         width:100%;
-        height:100vh;
+        height:800px;
     }
-    #section #festival .t_title{
+    #section #festival .backg{
+        height:100%;
+    }
+    /* #section #festival .t_title{
         margin-top: -40px;
-    }
+    } */
     #section #festival .t_title h2:after{
         display: none;
     }
@@ -1735,10 +1880,13 @@ body{
         /* border-radius: 20px; */
         position: relative;
     }
+    #section #festival .f_cont>ul>li .e_cont:hover{
+        background-color: transparent;
+    }
     #section #festival .f_cont>ul>li .e_cont img{
         width:100%;
         height:200px;
-        border-radius: 20px;
+        border-radius: 10px;
         padding-top: 0;
     }
     #section #festival .f_cont>ul>li img:hover{
@@ -1748,6 +1896,7 @@ body{
         display: block;
         transition: all 0.5s;
     }
+    
     #section #festival .f_cont>ul>li .f_text{
         width:100%;
         position: absolute;
@@ -1786,8 +1935,13 @@ body{
     #footer .total .c_cont{
         display: none;
     }
-    #footer .total .r_cont{
+    #footer .total .r_cont p{
         display: none;
+    }
+    #footer .total .r_cont .logo2{
+        position: absolute;
+        right:8%; top:35%;
+        /* border:1px solid red; */
     }
 }
 
@@ -1835,18 +1989,6 @@ body{
             height:720px;
             /* background-color: salmon; */
         }
-        /* #section #main .carousel .panel{
-            height:720px;
-        }
-        #section #main .carousel>ul>li .m_pic1{
-            background-position:75%;
-        }
-        #section #main .carousel .panel .m_pic3{
-            background-position: 54%;
-        } */
-        /* #section #main .carousel>ul>li .m_text{
-            
-        } */
         #section #main .carousel>ul>li .m_text h1{
             /* width:75vw; */
             font-size: 35px;
@@ -1961,45 +2103,32 @@ body{
             cursor: pointer;
         }
         #section #travel_news .article{
-            width:240px;
+            width:360px;
             height:550px;
-            cursor: pointer;
+            /* cursor: pointer; */
         }
         #section #travel_news .article>ul>li{
-            width:240px;
+            width:360px;
             height:220px;
             margin-bottom: 30px;
-            /* border:3px solid #dbd9d9a4; */
+            /* border:5px solid #dbd9d9a4; */
+            box-sizing: border-box;
         }
-        /* #section #travel_news .article>ul>li h3{
-            width:84%;
-            position: absolute;
-            top:50%; left:50%;
-            transform: translate(-50%, -50%);
-            font-size: 28px;
-            text-align: center;
-            color: #fff;
-            display: none;
-        } */
-        /* #section #travel_news .article>ul>li img{border:1px solid red;}
-        #section #travel_news .article>ul>li .container:hover{
-            filter: brightness(0.5);
+        #section #travel_news .article>ul>li .mouse{
+            width:360px;
+            height: 220px;
+            overflow: hidden;
+            /* border:1px solid red; */
+            cursor: pointer;
+            position: relative;
+            z-index: 100;
         }
-        #section #travel_news .article>ul>li>div:hover .h3{
-            display: block;
-            transition: all 0.5s;
+        #section #travel_news .article>ul>li .mouse:hover span{
+            bottom: 0;
         }
-        #section #travel_news .article>ul>li>div:hover h3{
-            width:100%;
-            position: absolute;
-            top:50%; left:50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-            display: none;
-        } */
-        /* #section #travel_news .article>ul>li img:hover h3{
-            display: block;
-        } */
+        #section #travel_news .article .content2 li:nth-child(1) .mouse img{
+            transform: translate(-30px,-30px);
+        }
         #section #travel_news .article .contents li:nth-child(2) .mouse img{
             transform: translateY(-20px);
         }
@@ -2007,8 +2136,7 @@ body{
             transform: translateY(-50px);
         }
         #section #travel_news .article>ul>li .mouse img{
-            width:250px;
-            background-position: center;
+            width:420px;
         }
         #section #travel_news .article>ul>li .read{
             display: none;
@@ -2191,11 +2319,18 @@ body{
             /* border-radius: 20px; */
             position: relative;
         }
+        #section #festival .f_cont>ul>li .e_cont{
+            border-radius: 10px;
+        }
+        #section #festival .f_cont>ul>li .e_cont:hover{
+            background-color: transparent;
+        }
         #section #festival .f_cont>ul>li .e_cont img{
             width:240px;
             height:240px;
-            border-radius: 20px;
+            border-radius: 10px;
             padding-top: 0;
+            border:none;
         }
         #section #festival .f_cont>ul>li:hover img{
             filter: brightness(0.5);

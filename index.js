@@ -137,11 +137,11 @@ $(document).ready(function(){
     //     $(".number>li>a span").eq(above).animate().css({"display":"block"});
     // });
 
-    let pos1 = $("#main").offset().top;
-let pos2 = $("#tour_reserv").offset().top;
-let pos3 = $("#travel_news").offset().top;
-let pos4 = $("#about_us").offset().top;
-let pos5 = $("#festival").offset().top;
+    let pos1 = $("#main").offset().top-120;
+let pos2 = $("#tour_reserv").offset().top-120;
+let pos3 = $("#travel_news").offset().top-100;
+let pos4 = $("#about_us").offset().top-100;
+let pos5 = $("#festival").offset().top-100;
 
 $(window).scroll(function(){
     let scroll = $(this).scrollTop();
@@ -163,7 +163,7 @@ $(window).scroll(function(){
     $(".number>li>a").click(function(e){
         e.preventDefault();
         let above = $(this).attr("href");
-        let distance = $(above).offset().top; // 여기서 72px를 빼줍니다.
+        let distance = $(above).offset().top-120; // 여기서 72px를 빼줍니다.
 
         $("html,body").stop().animate({"scrollTop":distance},400);
     });
